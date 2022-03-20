@@ -1,0 +1,15 @@
+<div>
+    <mat-card style="padding: 35px 30px ;margin: 25px" *ngFor="let special of specials; let i = index">
+        <mat-card-header>
+            <div mat-card-avatar>
+                <mat-icon>event</mat-icon>
+            </div>
+            <mat-card-title>Special -> {{ special._id }} {{ special.name }}</mat-card-title>
+            <mat-card-subtitle>{{ special.date | date: 'mediumDate' }}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content fxFlexAlign=center>
+            {{ special.description }} | Lorem, ipsum dolor sit amet cons adipisicing elit. Aperiam sunt ut numquam soluta esse tempore vitae autem, possimus quis mollitia!
+        </mat-card-content>
+        <mat-card-footer fxFlexAlign=center><button mat-raised-button style="color: white; background-color: seagreen;">Buy Now !</button></mat-card-footer>
+    </mat-card>
+</div>

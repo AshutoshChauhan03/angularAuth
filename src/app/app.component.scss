@@ -1,0 +1,25 @@
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.headerStyle {
+    padding: 10px;
+    color: white;
+}
+
+.iconStyle {
+    padding: 0 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.buttonStyle {
+    background-color: transparent; 
+    color: whitesmoke;    
+    font-size: 15px;
+}
+
+.active {
+    font-weight: bold;
+    color: black;
+}

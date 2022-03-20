@@ -1,0 +1,17 @@
+<div fxLayout fxLayoutAlign="center center" style="height: 90vh;">
+    <mat-card class="styleCard">
+        <form fxLayout="column" [formGroup]="myForm">
+            <mat-form-field appearance="outline">
+                <mat-label>Email</mat-label>
+                <input formControlName="email" matInput type="email">
+                <mat-error>Invalid</mat-error>
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Password</mat-label>
+                <input formControlName="password" matInput type="password">
+                <mat-error>Invalid</mat-error>
+            </mat-form-field>
+            <button mat-raised-button color="primary" style="color: black;" (click)="submit()">Login</button>
+        </form>
+    </mat-card>
+</div>
